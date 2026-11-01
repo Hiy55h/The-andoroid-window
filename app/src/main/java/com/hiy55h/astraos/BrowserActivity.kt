@@ -65,7 +65,7 @@ class BrowserActivity : Activity() {
         toolbar.addView(button("→") { current()?.goForward() })
         toolbar.addView(button("↻") { current()?.reload() })
         address = EditText(this).apply {
-            singleLine = true
+            isSingleLine = true
             textSize = 14f
             hint = "Search or enter address"
             setTextColor(Color.WHITE)
