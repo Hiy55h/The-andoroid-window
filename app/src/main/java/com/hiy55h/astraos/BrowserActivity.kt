@@ -93,6 +93,7 @@ class BrowserActivity : Activity() {
     private fun current(): WebView? = tabs.getOrNull(active)
 
     private fun addTab(url: String) {
+        current()?.visibility = View.GONE
         val web = WebView(this)
         web.settings.apply {
             javaScriptEnabled = true
