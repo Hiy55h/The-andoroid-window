@@ -9,7 +9,7 @@ android {
         applicationId = "com.hiy55h.astraos"
         minSdk = 30
         targetSdk = 30
-        versionCode = 1
+        versionCode = 3
         versionName = "0.1.0"
         ndk { abiFilters += listOf("armeabi-v7a") }
     }
